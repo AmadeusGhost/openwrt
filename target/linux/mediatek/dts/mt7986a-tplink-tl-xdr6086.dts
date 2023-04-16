@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later OR MIT
 
 /dts-v1/;
-#include "mt7986a-tl-xdr-common.dtsi"
+#include "mt7986a-tplink-tl-xdr-common.dtsi"
 
 / {
 	model = "TP-Link TL-XDR6086";
