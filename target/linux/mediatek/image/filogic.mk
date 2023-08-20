@@ -279,6 +279,16 @@ define Device/h3c_magic-nx30-pro
 endef
 TARGET_DEVICES += h3c_magic-nx30-pro
 
+define Device/jdcloud_re-cs-05
+  DEVICE_VENDOR := JDCloud
+  DEVICE_MODEL := RE-CS-05
+  DEVICE_DTS := mt7986a-jdcloud-re-cs-05
+  DEVICE_DTS_DIR := ../dts
+  DEVICE_PACKAGES := e2fsprogs f2fsck mkf2fs kmod-mt7986-firmware mt7986-wo-firmware
+  IMAGE/sysupgrade.bin := sysupgrade-tar | append-metadata
+endef
+TARGET_DEVICES += jdcloud_re-cs-05
+
 define Device/netgear_wax220
   DEVICE_VENDOR := NETGEAR
   DEVICE_MODEL := WAX220

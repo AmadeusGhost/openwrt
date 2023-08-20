@@ -84,6 +84,7 @@ platform_do_upgrade() {
 	cudy,wr3000-v1)
 		default_do_upgrade "$1"
 		;;
+	jdcloud,re-cs-05|\
 	glinet,gl-mt6000)
 		CI_KERNPART="kernel"
 		CI_ROOTPART="rootfs"
@@ -155,6 +156,7 @@ platform_copy_config() {
 			;;
 		esac
 		;;
+	jdcloud,re-cs-05|\
 	glinet,gl-mt6000|\
 	ubnt,unifi-6-plus)
 		emmc_copy_config
